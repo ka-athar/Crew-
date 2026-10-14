@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Privacy policy · Crew Ledger</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="brand"><span class="mark"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1 3h12M1 7h12M1 11h7" stroke="#fff" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Crew Ledger</div><a class="role" href="/" style="text-decoration:none">Open app</a></div></header>
+<main>
+<div class="wrap prose">
+<div class="head"><h1>Privacy policy</h1><p>Last updated October 14, 2026</p></div>
+<p>Crew Ledger is a private workspace used to assign work and track deadlines. It is run by your workspace administrator. By checking the consent box at sign-in, you confirm that you have read this policy. You can open it in a separate tab before accepting.</p>
+
+<h2>What is stored</h2>
+<ul>
+<li>Your account: full name, username, email address and a one-way scrambled form of your password. The password itself is never stored and cannot be read by anyone, including your team lead.</li>
+<li>Tasks assigned to you: title, details, start date, deadline, priority, workflow status, task type, estimate, list/stage, sprint/cycle and tags. Workflow statuses include To do, In progress, Submitted, Under review, Needs changes, Waiting teacher’s approval and Completed.</li>
+<li>An activity record of task assignments and status changes, including who acted and when.</li>
+<li>Attendance records: one daily record per person, with server-recorded time-in, time-out, date, workspace, session duration and estimated active-app time based on visible-page heartbeats. Time-in is created automatically immediately after successful sign-in for the day; sign-out or a browser exit attempts to record time-out. Active-app time is an estimate based on periodic heartbeats while the app tab is visible, not a guarantee that a person is actively working. If a browser or device is force-stopped before the exit request is sent, the app can only reconcile the record when it reconnects, using the last server heartbeat.</li>
+<li>Files you deliberately upload, including the filename, file type, approximate size, uploader and upload time. Uploads are limited to 4 MB per file and are stored with workspace data until removed by the workspace operator.</li>
+<li>Workspace names, workspace membership and task-to-workspace assignments.</li>
+<li>Workspace chat: channel and group names, message text, sender and message time. Each workspace has separate channels and group conversations. Workspace-wide channels can be read by that workspace’s active members and lead; private group conversations can be read only by the selected group members and the primary super-admin.</li>
+<li>A sign-in session token on each device you use for up to 14 days. The app still requires local device verification on every launch/restart and when returning from the background.</li>
+<li>A timestamp and version number when you accept this Privacy Policy at sign-in.</li>
+<li>If you choose to enable device passkeys for attendance, the server stores the public-key credential and its counter. The device performs user verification locally using a fingerprint, face recognition or device PIN; Crew Ledger does not receive or store biometric images or fingerprint templates.</li>
+</ul>
+
+<h2>What is not collected</h2>
+<ul>
+<li>Location, contacts, microphone and camera data are not collected automatically. Photos and documents are accessed only when you choose them in the upload picker; selected files are uploaded to the app server for work purposes.</li>
+<li>Advertising or analytics trackers. The app sets no tracking cookies.</li>
+</ul>
+
+<h2>Who can see it</h2>
+<ul>
+<li><b>Your workspace lead</b> can see accounts, tasks, attendance, reports and activity for their own workspace. The primary super-admin can oversee all four workspaces.</li>
+<li><b>Team members</b> can see their own profile and tasks, workspace-shared uploads, their own attendance history, and messages/channels available inside their workspace.</li>
+<li><b>The primary super-admin</b> can oversee accounts, tasks, reports, attendance, activity and files across all workspaces.</li>
+<li>The app is hosted on Netlify, which stores its data. Whoever manages the Netlify account for this app can technically reach that data.</li>
+</ul>
+
+<h2>Third-party fonts</h2>
+<p>To display text in its intended typefaces, the app loads font files from Google Fonts. That request tells Google your device's address. Your team lead can switch to self-hosted fonts to avoid this.</p>
+
+<h2>How the app is protected</h2>
+<ul>
+<li>Passwords are hashed with scrypt. Temporary passwords set by the team lead must be replaced at first sign in.</li>
+<li>Repeated wrong passwords lock sign in for 15 minutes.</li>
+<li>Sign-in cookies are HttpOnly and SameSite=Strict, and carry the Secure flag over HTTPS.</li>
+<li>Every request is checked on the server for the signed-in person's role. Members cannot read or change other people's private tasks. Channels and files are restricted to the matching workspace. Private group messages are restricted to selected group members as well; the primary administrator can oversee all workspaces.</li>
+<li>Text is always displayed as plain text, and a strict content policy blocks injected scripts.</li>
+<li>Deactivating an account signs that person out immediately.</li>
+</ul>
+
+<h2>Your choices</h2>
+<ul>
+<li>Change your password any time from More.</li>
+<li>Ask your team lead to correct your account, review your records, or request export/deletion. The workspace operator should establish and follow a retention schedule for attendance and uploads.</li>
+<li>Sign out on shared devices from More.</li>
+</ul>
+
+<h2>Uploads and automatic assignment</h2>
+<p>Choosing a file from your phone may open the system photo library or file picker. A direct Google Drive account connection is not included; if your device exposes Drive through its file picker, you may be able to choose a file there. The automatic assignment helper currently parses text/CSV instructions in the format “Member Name: task description — YYYY-MM-DD”. It does not understand every PDF, Word document or image, and every generated assignment should be reviewed by a team lead before being relied upon.</p>
+
+<h2>Questions</h2>
+<p>Contact your team lead, who runs this workspace. This page describes how the app works and is not legal advice.</p>
+<p><a href="/">← Back to Crew Ledger</a></p>
+</div>
+</main>
+</body>
+</html>
